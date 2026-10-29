@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+<title>TinyGo - Espressif DevCon 2026</title>
+
+<meta name="description" content="TinyGo">
+<meta name="author" content="Ron Evans">
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<link rel="stylesheet" href="css/reveal.css">
+<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+<!-- For syntax highlighting -->
+<link rel="stylesheet" href="lib/css/tomorrow.css">
+
+<link rel="stylesheet" href="css/hybrid.css">
+
+<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+<script>
+	document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+</script>
+
+<!--[if lt IE 9]>
+<script src="lib/js/html5shiv.js"></script>
+<![endif]-->
+</head>
+
+<body>
+	<div class="reveal">
+
+	<!-- Any section element inside of this container is displayed as a slide -->
+	<div class="slides">
+		<section>
+			<section>
+				<h1>TinyGo On ESP32</h1>
+				<h2>Espressif DevCon 2026</h2>
+				<h2>Ron Evans - @deadprogram</h2>
+			</section>
+		</section>
+
+		<section>
+			<h2>Ron Evans (@deadprogram)</h2>
+		</section>
+
+		<section>
+			<h1>Technologist For Hire</h1>
+		</section>
+
+		<section>
+			<h1>Technologist <u>For Hire</u></h1>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/thg-logo.png">
+			</div>
+			<h3><a href="https://hybridgroup.com" target="_blank">hybridgroup.com</a></h3>
+		</section>
+
+		<section>
+			<h1>Software that makes your hardware work</h1>
+		</section>
+	
+		<section>
+			<div class="image-container">
+			  <img src="images/tinygo-logo.png">
+			</div>
+			<h3><a href="https://tinygo.org" target="_blank">tinygo.org</a></h3>          
+		</section>
+
+		<section>
+			<h2>Go compiler for small places</h2>
+		</section>
+
+		<section>
+			<h2>Current stats</h2>
+		</section>
+
+		<section>
+			<h2>17k+ stars</h2>
+		</section>
+
+		<section>
+			<h2>1000+ forks</h2>
+		</section>
+
+		<section>
+			<h2>250+ contributors</h2>
+		</section>
+
+		<section>
+			<h2>Over 150 different hardware boards supported</h2>
+		</section>
+
+		<section>
+			<h2>ESP32</h2>
+		</section>
+
+		<section>
+			<h2>Hello, world of things</h2>
+		</section>
+
+		<section>
+			<pre><code class="golang">
+package main
+
+func main() {
+	println("Hello world!")
+}
+			</code></pre>
+			<h3>blinky1.go</h3>
+		</section>
+
+		<section>
+			<h2>TinyGo Support For ESP32</h2>
+		</section>
+
+		<section>
+			<h2>espflasher</h2>
+			<h3>CLI and Go package for flashing ESP32 devices</h3>
+			<h3><a href="https://github.com/tinygo-org/espflasher" target="_blank">tinygo.org/x/espflasher</a></h3>
+		</section>
+
+		<section>
+			<h2>espradio</h2>
+			<h3>wireless communication on ESP32xx microcontrollers</h3>
+			<h3><a href="https://github.com/tinygo-org/espradio" target="_blank">tinygo.org/x/espradio</a></h3>
+		</section>
+
+		<section>
+			<h2>lneto</h2>
+			<h3>Userspace networking library written in Go</h3>
+			<h3>Patricio Whittingslow (@soypat)</h3>
+			<h3><a href="https://github.com/soypat/lneto" target="_blank">github.com/soypat/lneto</a></h3>
+		</section>
+
+		<section>
+			<h2>bluetooth</h2>
+			<h3>Bluetooth communication on microcontrollers and operating systems</h3>
+			<h3><a href="https://github.com/tinygo-org/bluetooth" target="_blank">tinygo.org/x/bluetooth</a></h3>
+		</section>
+
+		<section>
+			<h2>Recent News - TinyGo On ESP32</h2>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/tinygo-seeedstudio-starter-kit.jpg">
+			</div>
+			<h2>"TinyGo Seeedstudio Starter Kit"</h2>
+			<h3><a href="https://www.seeedstudio.com/tinygo-xiao-starter-kit.html" target="_blank">seeedstudio.com/tinygo-xiao-starter-kit.html</a></h3>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="./images/programmez.jpg">
+			</div>
+			<h2>programmez!</h2>
+			<h3>Donia Chaiehloud, Patricio Whittingslow, Daniel Esteban</h3>
+			<h3><a href="https://www.programmez.com/magazine/programmez-276-pdf" target="_blank">programmez.com</a></h3>
+		</section>
+
+		<section>
+			<h2>Introducing...</h2>
+		</section>
+
+		<section>
+			<h2>Tinyflight</h2>
+		</section>
+
+		<section>
+			<h2>Complete flight controller written in TinyGo</h2>
+		</section>
+	
+		<section>
+			<h2>Running on m5stamp fly</h2>
+		</section>
+
+		<section>
+			<h2>100% protocol compatible with the Atom Joystick</h2>
+		</section>
+
+		<section>
+			<h2>Unit tests, including closed loop tests on a simulated quad</h2>
+		</section>
+
+		<section>
+			<h2>tinyflightsim, browser flight sim that runs stampfly firmware as WebAssembly</h2>
+		</section>
+
+		<section>
+			<h2>Running on m5stamp fly</h2>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="./images/arch-1.png">
+			</div>
+			<h3>Architecture</h3>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="./images/arch-2.png">
+			</div>
+			<h3>Architecture</h3>
+		</section>
+
+		<section>
+			<h2>show me some code</h2>
+		</section>
+
+		<section>
+			<h2>stampfly specs</h2>
+		</section>
+
+		<section>
+			<h2>camera-receiver specs</h2>
+		</section>
+
+		<section>
+			<h2>show me the hardware</h2>
+		</section>
+
+		<section data-background-image="./images/xiao-fingers.jpg" data-background-size="contain">
+		</section>
+
+		<section>
+			<h2>run cameraview</h2>
+		</section>
+
+		<section data-background-image="./images/big-xiao.gif" data-background-size="contain">
+		</section>
+
+		<section>
+			<h2>was that fun?</h2>
+		</section>
+
+		<section>
+			<h2>instagram: instagram.com/tinygolang</h2>
+			<h2>fed: @tinygo@mastodon.social</h2>
+			<h2>bsky: @tinygo.org</h2>
+		</section>
+
+		<section>
+			<h2>tinygo.org</h2>
+		</section>
+
+		<section>
+			<h1>Thank you!</h1>
+			<h2>@deadprogram</h2>
+			<h2>Technologist For Hire</h2>
+		</section>	
+	  </div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.min.js"></script>
+	<script src="js/hybrid.js"></script>
+
+	<script>
+
+	  // Full list of configuration options available here:
+	  // https://github.com/hakimel/reveal.js#configuration
+	  Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+
+		// 16:9 aspect ratio
+		width: 1280,
+		height: 720,
+
+		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+		// Optional libraries used to extend on reveal.js
+		dependencies: [
+		  { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+		  { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+		  { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+		  { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+		  { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+		  { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+		]
+	  });
+	</script>
+
+  </body>
+</html>
