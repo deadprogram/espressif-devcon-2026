@@ -104,6 +104,27 @@
 		</section>
 
 		<section>
+			<h2>Recent News - TinyGo On ESP32</h2>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="./images/programmez.jpg">
+			</div>
+			<h2>programmez!</h2>
+			<h3>Donia Chaiehloud, Patricio Whittingslow, Daniel Esteban</h3>
+			<h3><a href="https://www.programmez.com/magazine/programmez-276-pdf" target="_blank">programmez.com</a></h3>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/tinygo-seeedstudio-starter-kit.jpg">
+			</div>
+			<h2>"TinyGo Seeedstudio Starter Kit"</h2>
+			<h3><a href="https://www.seeedstudio.com/tinygo-xiao-starter-kit.html" target="_blank">seeedstudio.com/tinygo-xiao-starter-kit.html</a></h3>
+		</section>
+
+		<section>
 			<h2>Hello, world of things</h2>
 		</section>
 
@@ -111,8 +132,21 @@
 			<pre><code class="golang">
 package main
 
+import (
+    "machine"
+    "time"
+)
+
 func main() {
-	println("Hello world!")
+    led := machine.LED
+    led.Configure(machine.PinConfig{Mode: machine.PinOutput})
+    for {
+        led.Low()
+        time.Sleep(time.Millisecond * 1000)
+
+        led.High()
+        time.Sleep(time.Millisecond * 1000)
+    }
 }
 			</code></pre>
 			<h3>blinky1.go</h3>
@@ -148,32 +182,28 @@ func main() {
 		</section>
 
 		<section>
-			<h2>Recent News - TinyGo On ESP32</h2>
+			<h2>Wifi scanner</h2>
 		</section>
 
 		<section>
-			<div class="image-container">
-				<img src="images/tinygo-seeedstudio-starter-kit.jpg">
-			</div>
-			<h2>"TinyGo Seeedstudio Starter Kit"</h2>
-			<h3><a href="https://www.seeedstudio.com/tinygo-xiao-starter-kit.html" target="_blank">seeedstudio.com/tinygo-xiao-starter-kit.html</a></h3>
+			<h2>Wifi scanner</h2>
+			<h3><a target="_blank" href="https://github.com/deadprogram/espressif-devcon-2026/demo/scan/main.go">See the code</a></h3>
 		</section>
 
 		<section>
-			<div class="image-container">
-				<img src="./images/programmez.jpg">
-			</div>
-			<h2>programmez!</h2>
-			<h3>Donia Chaiehloud, Patricio Whittingslow, Daniel Esteban</h3>
-			<h3><a href="https://www.programmez.com/magazine/programmez-276-pdf" target="_blank">programmez.com</a></h3>
+			<h2>Run the code</h2>
 		</section>
+
 
 		<section>
 			<h2>Introducing...</h2>
 		</section>
 
 		<section>
-			<h2>Tinyflight</h2>
+			<div class="image-container">
+				<img src="./images/tinyflight-banner.svg">
+			</div>
+			<h3>github.com/hybridgroup/tinyflight</h3>
 		</section>
 
 		<section>
@@ -181,37 +211,53 @@ func main() {
 		</section>
 	
 		<section>
-			<h2>Running on m5stamp fly</h2>
+			<div class="image-container">
+				<img src="./images/stampfly-captivity.jpg">
+			</div>
+			<h3>m5stamp fly</h3>
 		</section>
 
 		<section>
-			<h2>100% protocol compatible with the Atom Joystick</h2>
+			<h2>100% protocol compatible with Atom Joystick</h2>
 		</section>
 
 		<section>
-			<h2>Unit tests, including closed loop tests on a simulated quad</h2>
-		</section>
-
-		<section>
-			<h2>tinyflightsim, browser flight sim that runs stampfly firmware as WebAssembly</h2>
-		</section>
-
-		<section>
-			<h2>Running on m5stamp fly</h2>
+			<h2>Full unit tests and CI</h2>
 		</section>
 
 		<section>
 			<div class="image-container">
-				<img src="./images/arch-1.png">
+				<img src="./images/tinyflightsim.png">
 			</div>
-			<h3>Architecture</h3>
+			<h3>tinyflightsim</h3>
 		</section>
 
 		<section>
 			<div class="image-container">
-				<img src="./images/arch-2.png">
+				<img src="./images/tinyflight-arch-full.png">
 			</div>
-			<h3>Architecture</h3>
+			<h3>Tinyflight Architecture</h3>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="./images/tinyflight-arch-inputs.png">
+			</div>
+			<h3>Inputs</h3>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="./images/tinyflight-arch-flightcontrol.png">
+			</div>
+			<h3>Flight Controller</h3>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="./images/tinyflight-arch-outputs.png">
+			</div>
+			<h3>Outputs</h3>
 		</section>
 
 		<section>
@@ -230,11 +276,12 @@ func main() {
 			<h2>show me the hardware</h2>
 		</section>
 
-		<section data-background-image="./images/xiao-fingers.jpg" data-background-size="contain">
+		<section data-background-image="http://localhost:8080" data-background-size="contain">
 		</section>
 
 		<section>
 			<h2>run cameraview</h2>
+			<h3><a target="_blank" href="http://localhost:8081">See the video</a></h3>
 		</section>
 
 		<section data-background-image="./images/big-xiao.gif" data-background-size="contain">
