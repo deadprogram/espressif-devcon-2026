@@ -158,3 +158,45 @@ flowchart LR
 
     mixer --> motors([motors])
 ```
+
+firmware arch
+
+```mermaid
+flowchart TD
+    subgraph firmware
+        subgraph board
+            radio
+            motors
+        end
+        subgraph devices
+            IMU
+            ToF
+            flow
+            barometer
+        end
+        subgraph additions
+            cameras
+        end
+        flightcontroller
+    end
+    devices --> flightcontroller
+    board <--> flightcontroller
+    additions <--> board
+```
+
+cores arch
+
+```mermaid
+flowchart TD
+    subgraph esp32s3
+        subgraph core1
+            FC[flight controller]
+        end
+        subgraph core0
+            A[radio]
+            B[sensors]
+            C[blackbox]
+            D[additional hardware]
+        end
+    end
+```
